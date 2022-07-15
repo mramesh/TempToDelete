@@ -1,0 +1,21 @@
+{
+  "name": "temptodelete",
+  "version": "1.0.0",
+  "description": "playwright testing",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mramesh/TempToDelete.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mramesh/TempToDelete/issues"
+  },
+  "homepage": "https://github.com/mramesh/TempToDelete#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.23.3",
+    "axe-playwright": "^1.1.11"
+  }
+}
