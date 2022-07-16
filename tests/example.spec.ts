@@ -22,7 +22,7 @@ test('homepage has Playwright in title and get started link linking to the intro
   // run accessability.
 
   await injectAxe(page);
-  await checkA11y(page,  {
+  await checkA11y(page, null,  {
     axeOptions: {},
     detailedReport: true,
     detailedReportOptions: {
