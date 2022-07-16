@@ -21,6 +21,12 @@ pipeline {
                     npx playwright test
                 '''
             }
+            post {
+                success {
+                    echo 'SUCESSFULLY DONE'
+                }
+            }
         }
+        
     }
 }
