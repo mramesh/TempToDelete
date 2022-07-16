@@ -11,7 +11,7 @@ pipeline {
         }
         stage('help') {
             steps {
-                bat 'npx playwight test --help'
+                bat 'npx playwright test --help'
             }
         }
         stage('test') {
