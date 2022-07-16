@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { injectAxe, checkA11y } from 'axe-playwright';
 
 test('homepage has Playwright in title and get started link linking to the intro page', async ({ page }) => {
   await page.goto('https://playwright.dev/');
@@ -17,4 +18,17 @@ test('homepage has Playwright in title and get started link linking to the intro
 
   // Expects the URL to contain intro.
   await expect(page).toHaveURL(/.*intro/);
+
+  // run accessability.
+
+  await injectAxe(page);
+  await checkA11y(page,  {
+    axeOptions: {},
+    detailedReport: true,
+    detailedReportOptions: {
+      html: true
+    }
+
+  })
+
 });
